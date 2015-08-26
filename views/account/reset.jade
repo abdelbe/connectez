@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  .col-sm-8.col-sm-offset-2
+    form(method='POST')
+      legend Reset Password
+      input(type='hidden', name='_csrf', value=_csrf)
+      .form-group
+        label(for='password') Nouveau Mot de Passe
+        input.form-control(type='password', name='password', value='', placeholder='Mot de Passe', autofocus=true)
+      .form-group
+        label(for='confirm') Confirm Password
+        input.form-control(type='password', name='confirm', value='', placeholder='Confirmer Mot de Passe')
+      .form-group
+        button.btn.btn-primary.btn-reset(type='submit')
+          i.fa.fa-keyboard-o
+          | Changer Mot de Passe

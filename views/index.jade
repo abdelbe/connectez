@@ -1,0 +1,72 @@
+html
+  head
+    title Connectez vous
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='dd/font-awesome.min.css')
+    link(rel='stylesheet', href='dd/lightbox.css')
+    link(rel='stylesheet', href='dd/preset1.css.css')
+    link(rel='stylesheet', href='css/index.css')
+  body
+    .main-nav
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='acc.html')
+            h1
+              img.img-responsive(src='dd/Black_and_white_on_transparent_background_322x75.png', alt='logo')
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.scroll.active
+              a(href='acc.html') Accueil
+            li.scroll
+              a(href='acc.html#services') Technologie
+            li.scroll
+              a(href='index2.html') Chat
+            li.scroll
+              a(href='index6.html') Broadcasting
+            li.scroll
+              a(href='/join') VideoConf
+            li.scroll
+              a(href='/account') Mon Compte
+            li.scroll
+              a(href='/logout') Déconnecter
+            //
+              <li class="scroll"><a href="#about-us">Qui nous sommes ?</a></li>
+              <li class="scroll"><a href="#portfolio">Nos clients</a></li>
+    // /#main-nav
+    .inner.cover
+      h1.cover-heading Identifiez vous
+      p.lead  
+      form.form-horizontal(action='/join', method='post', role='form')
+        .form-group.row
+          .input-group.input-group-lg.col-xs-6.col-md-offset-3
+            label.sr-only(for='username') Username
+            .input-group-addon
+              span.glyphicon.glyphicon-user(aria-hidden='true')
+            input#username.form-control(type='text', name='username', placeholder='Votre nom')
+        .form-group.row
+          .input-group.input-group-lg.col-xs-6.col-md-offset-3
+            label.sr-only(for='roomname') Roomname
+            .input-group-addon
+              span.glyphicon.glyphicon-map-marker(aria-hidden='true')
+            input#roomname.form-control(type='text', name='roomname', placeholder='Room')
+        button#submit.btn.btn-primary(type='submit') Entrer 
+    .mastfoot
+      .inner
+        p
+          | Smart Web 2015 
+          a(href='#')  Ben Ali Abdel bacet
+    script(type='text/javascript', src='js/jquery-1.11.1.min.js')
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    script(type='text/javascript', src='js/index.js')
+    script(type='text/javascript', src='dd/jquery.inview.min.js')
+    script(type='text/javascript', src='dd/wow.min.js')
+    script(type='text/javascript', src='dd/mousescroll.js')
+    script(type='text/javascript', src='dd/smoothscroll.js')
+    script(type='text/javascript', src='dd/jquery.countTo.js')
+    script(type='text/javascript', src='dd/lightbox.min.js')
